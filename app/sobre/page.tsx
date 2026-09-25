@@ -1,4 +1,4 @@
-// app/sobre/page.js
+// app/sobre/page.tsx
 export default function Sobre() {
   return (
     <main>

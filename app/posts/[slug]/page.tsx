@@ -1,10 +1,14 @@
-// app/posts/[slug]/page.js
+// app/posts/[slug]/page.tsx
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import posts from "../data";
 import styles from "../posts.module.css";
 
-export default async function PostDetalhe({ params }) {
+interface PostDetalheProps {
+  params: Promise<{ slug: string }>;
+}
+
+export default async function PostDetalhe({ params }: PostDetalheProps) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
 

@@ -1,9 +1,15 @@
-// app/posts/data.js
+// app/posts/data.ts
 // Lista central dos posts do blog. Cada post tem um "slug" (identificador
 // usado na URL), um título e um resumo. Quando quiser adicionar um post novo,
 // basta adicionar um novo objeto neste array.
 
-const posts = [
+export interface Post {
+  slug: string;
+  titulo: string;
+  resumo: string;
+}
+
+const posts: Post[] = [
   {
     slug: "aprendendo-nodejs",
     titulo: "Aprendendo Node.js",

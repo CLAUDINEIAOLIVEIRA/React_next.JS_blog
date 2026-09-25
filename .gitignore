@@ -17,3 +17,7 @@ npm-debug.log*
 
 # local env files
 .env*.local
+
+# arquivos de agente de IA gerados automaticamente pelo `next dev`
+/AGENTS.md
+/CLAUDE.md

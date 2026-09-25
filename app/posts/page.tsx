@@ -1,4 +1,4 @@
-// app/posts/page.js
+// app/posts/page.tsx
 import Link from "next/link";
 import posts from "./data";
 import styles from "./posts.module.css";
